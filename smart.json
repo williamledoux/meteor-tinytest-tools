@@ -1,0 +1,7 @@
+{
+  "name": "tinytest-tools",
+  "description": "Helpers for meteor's tinytest tool",
+  "author": "William Ledoux <william.ledoux@gmail.com>",
+  "version": "0.1.0",
+  "git": "https://github.com/williamledoux/meteor-tinytest-tools.git"
+}
