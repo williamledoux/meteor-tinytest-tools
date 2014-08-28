@@ -1,8 +1,8 @@
 Package.describe({
-  description: "Helpers for Meteor's tinytest",
+  summary: "Helpers for Meteor's tinytest",
   internal: false,
   version: "0.1.2",
-  name: "williamledoux:static-server",
+  name: "williamledoux:tinytest-tools",
   git: "https://github.com/williamledoux/meteor-tinytest-tools.git"
 });
 
