@@ -1,4 +1,4 @@
-# tinytest-tools
+# tinytest-tools v0.1.2
 
 (Wanabee set of) helper(s) for working with Meteor's tinytest framework.
 Contributions and comments are very welcome

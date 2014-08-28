@@ -1,10 +1,13 @@
 Package.describe({
-  summary: "Tools for TinyTest",
+  description: "Helpers for Meteor's tinytest",
   internal: false,
-  environments: ['client', 'server']
+  version: "0.1.2",
+  name: "williamledoux:static-server",
+  git: "https://github.com/williamledoux/meteor-tinytest-tools.git"
 });
 
-Package.on_use(function (api){
+Package.onUse(function (api){
+  api.versionsFrom('0.9.0');
   api.use('tinytest');
   api.export('CallbacksWatcher', {testOnly: true});
   api.add_files('callbacks_watcher.js');
