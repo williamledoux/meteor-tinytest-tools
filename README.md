@@ -1,4 +1,4 @@
-# tinytest-tools v0.1.2
+# tinytest-tools v0.2.0
 
 (Wanabee set of) helper(s) for working with Meteor's tinytest framework.
 Contributions and comments are very welcome
@@ -159,3 +159,9 @@ Will make the test to fail if no callback has been called during `interval`ms
     CBW.wait(onComplete, 10, 500); 
   });
 ```
+Changelog
+------------
+ * 0.2.0
+  * Preserve `this` when calling wrapped callbacks
+ * 0.1.2
+  * Update to official meteor packaging system

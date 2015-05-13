@@ -53,15 +53,15 @@ CallbacksWatcher.prototype.wrapCB = function(name, expectedCalls, callback, bFor
 				result=callback;
 			else if(_bForceArgs){
 				arguments.iCall = worker.iCall;
-				result=callback(arguments);
+				result=callback.call(this, arguments);
 			}else{
 				switch(arguments.length){
-					case 0: result=callback(worker.iCall); break;
-					case 1: result=callback(arguments[0], worker.iCall); break;
-					case 2: result=callback(arguments[0], arguments[1], worker.iCall); break;
-					case 3: result=callback(arguments[0], arguments[1], arguments[2], worker.iCall); break;
-					case 4: result=callback(arguments[0], arguments[1], arguments[2], arguments[3], worker.iCall); break;
-					case 5: result=callback(arguments[0], arguments[1], arguments[2], arguments[3], arguments[4], worker.iCall); break;
+					case 0: result=callback.call(this, worker.iCall); break;
+					case 1: result=callback.call(this, arguments[0], worker.iCall); break;
+					case 2: result=callback.call(this, arguments[0], arguments[1], worker.iCall); break;
+					case 3: result=callback.call(this, arguments[0], arguments[1], arguments[2], worker.iCall); break;
+					case 4: result=callback.call(this, arguments[0], arguments[1], arguments[2], arguments[3], worker.iCall); break;
+					case 5: result=callback.call(this, arguments[0], arguments[1], arguments[2], arguments[3], arguments[4], worker.iCall); break;
 				}
 			}				
 		}
